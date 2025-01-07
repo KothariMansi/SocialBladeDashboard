@@ -26,10 +26,8 @@
                 </Grid.Resources>
                 <userControls:SideBar/>
 
-                <!--2st Column-->
-                <Grid Grid.Column="1">
-
-                </Grid>
+                <!--2nd Column-->
+                <userControls:Dashboard Grid.Column="1"/>
 
 
             </Grid>

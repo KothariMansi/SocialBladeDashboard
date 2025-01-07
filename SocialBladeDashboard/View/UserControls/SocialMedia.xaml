@@ -1,0 +1,78 @@
+﻿<UserControl x:Class="SocialBladeDashboard.View.UserControls.SocialMedia"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:SocialBladeDashboard.View.UserControls"
+             xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800" d:Background="White" d:Margin="10">
+    <d:Grid>
+        <Grid.Resources>
+            <Style TargetType="materialDesign:PackIcon">
+                <Setter Property="Width" Value="30"></Setter>
+                <Setter Property="Height" Value="30"></Setter>
+            </Style>
+        </Grid.Resources>
+
+        <WrapPanel HorizontalAlignment="Center">
+            <Border BorderBrush="White"  BorderThickness="5" Margin="20 0" CornerRadius="15">
+                <materialDesign:Card materialDesign:ShadowAssist.Darken="True" UniformCornerRadius="15" BorderThickness="5"
+        Width="110" Height="130" Background="#F6F6F8">
+                    <StackPanel>
+                        <materialDesign:PackIcon Kind="Twitter" Foreground="#29A3EC"></materialDesign:PackIcon>
+                        <TextBlock FontWeight="SemiBold" FontSize="25" Text="280K" Margin="0 10 0 0"/>
+                        <TextBlock FontSize="12"  Text="Followers"/>
+                        <materialDesign:PackIcon Kind="EllipsisHorizontal" HorizontalAlignment="Right"></materialDesign:PackIcon>
+                    </StackPanel>
+                </materialDesign:Card>
+            </Border>
+
+            <Border BorderBrush="White"  BorderThickness="5" Margin="20 0" CornerRadius="15">
+                <materialDesign:Card materialDesign:ShadowAssist.Darken="True" UniformCornerRadius="15" BorderThickness="5"
+    Width="110" Height="130" Background="#F6F6F8">
+                    <StackPanel>
+                        <materialDesign:PackIcon Kind="Instagram">
+                            <materialDesign:PackIcon.Foreground>
+                                <LinearGradientBrush StartPoint="1,0" EndPoint="0.5,1">
+                                    <GradientStop Color="#912A73" Offset="0"/>
+                                    <GradientStop Color="#FA8E22" Offset="1"/>
+                                </LinearGradientBrush>
+                            </materialDesign:PackIcon.Foreground>
+                        </materialDesign:PackIcon>
+                        <TextBlock FontWeight="SemiBold" FontSize="25" Text="1.1M" Margin="0 10 0 0"/>
+                        <TextBlock FontSize="12"  Text="Followers"/>
+                        <materialDesign:PackIcon Kind="EllipsisHorizontal" HorizontalAlignment="Right"></materialDesign:PackIcon>
+                    </StackPanel>
+                </materialDesign:Card>
+            </Border>
+
+            <Border BorderBrush="White"  BorderThickness="5" Margin="20 0" CornerRadius="15">
+                <materialDesign:Card materialDesign:ShadowAssist.Darken="True" UniformCornerRadius="15" BorderThickness="5"
+Width="110" Height="130" Background="#F6F6F8">
+                    <StackPanel>
+                        <materialDesign:PackIcon Kind="Youtube" Foreground="Red"></materialDesign:PackIcon>
+                        <TextBlock FontWeight="SemiBold" FontSize="25" Text="101K" Margin="0 10 0 0"/>
+                        <TextBlock FontSize="12"  Text="Followers"/>
+                        <materialDesign:PackIcon Kind="EllipsisHorizontal" HorizontalAlignment="Right"></materialDesign:PackIcon>
+                    </StackPanel>
+                </materialDesign:Card>
+            </Border>
+
+            <Border BorderBrush="White"  BorderThickness="5" Margin="20 0" CornerRadius="15">
+                <materialDesign:Card materialDesign:ShadowAssist.Darken="True" UniformCornerRadius="15" BorderThickness="5"
+Width="110" Height="130" Background="#F6F6F8">
+                    <StackPanel>
+                        <materialDesign:PackIcon Kind="Facebook" Foreground="#29A3EC"></materialDesign:PackIcon>
+                        <TextBlock FontWeight="SemiBold" FontSize="25" Text="90K" Margin="0 10 0 0"/>
+                        <TextBlock FontSize="12"  Text="Followers"/>
+                        <materialDesign:PackIcon Kind="EllipsisHorizontal" HorizontalAlignment="Right"></materialDesign:PackIcon>
+                    </StackPanel>
+                </materialDesign:Card>
+            </Border>
+        </WrapPanel>
+
+    </d:Grid>
+    
+
+</UserControl>
