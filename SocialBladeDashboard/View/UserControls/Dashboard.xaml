@@ -39,8 +39,10 @@
                         </ComboBoxItem>
                     </ComboBox>
                 </Grid>
-                <local:SocialMedia></local:SocialMedia>
-                <local:SocialMediaSubscriber></local:SocialMediaSubscriber>
+                <local:SocialMedia/>
+                <local:SocialMediaSubscriber/>
+                <local:KeyMatrices/>
+
             </StackPanel>
         </Grid>
         
